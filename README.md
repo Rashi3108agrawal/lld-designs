@@ -45,16 +45,7 @@ Each system is designed using the following steps:
 
 lld-designs/
 ├── parking-lot
-├── elevator-system
-├── splitwise
-├── vending-machine
-├── tic-tac-toe
-├── snake-and-ladder
-├── library-management
-├── rate-limiter
-└── logging-system
 
----
 
 ## 🧩 Each Design Includes
 
