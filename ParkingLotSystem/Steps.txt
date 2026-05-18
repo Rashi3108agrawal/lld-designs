@@ -1,0 +1,33 @@
+Understand Requirements -> Identify core entities -> Identify Relationships -> Identify Services / functions -> Identify design patterns -> Edge cases -> Implemetation
+
+Requirements:
+
+Multiple floors with multiple parking spots
+Different spot types: Compact, Large, Handicapped, Motorcycle
+Different vehicle types: Car, Truck, Motorcycle, Van
+Find available spots based on vehicle type
+Park and unpark vehicles
+Calculate parking fees based on duration
+
+
+Key Concepts
+Object-oriented design and class relationships
+
+Enum for vehicle and spot types
+
+Composition (ParkingLot has Floors, Floor has Spots)
+
+Strategy pattern for pricing
+
+Singleton for ParkingLot
+
+Composition :  HAS-A relationship between floor and spots and Parking lot and Floors
+
+Strategy pattern for Pricing and parking (extension)
+
+Abstract class for vehicles for OCP principles
+
+✔ Thread Safety
+ReentrantLock for critical parking/unparking section
+ConcurrentHashMap for shared state
+volatile + double-check locking singleton
