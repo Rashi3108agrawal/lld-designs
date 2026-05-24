@@ -284,6 +284,22 @@ Client → API Layer → Notification Service → Queue → Worker → Channel S
 
 > “I designed a scalable notification system using a queue-based architecture to handle high throughput. Notifications are built using the Builder Pattern and routed through a Factory-based channel selection. A worker consumes messages asynchronously and applies retry logic with exponential backoff. Failed messages after max retries are pushed to a Dead Letter Queue. The system supports rate limiting to handle external provider constraints and is horizontally scalable using multiple workers.”
 
+🔥 Design Patterns Used
+Factory Pattern → Sender creation
+Strategy Pattern → Channel behavior
+Builder Pattern → Notification creation
+Producer-Consumer Pattern → Queue + Worker
+⚙️ System Design Concepts
+Async processing
+Queue-based architecture
+Retry mechanism
+Dead Letter Queue (DLQ)
+Priority-based processing
+🚀 Complexity / Scalability
+O(1) enqueue
+Horizontal scaling possible (add more workers)
+Supports millions of messages via queue
+
 ---
 
 ## 🏁 Summary
